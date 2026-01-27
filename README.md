@@ -307,7 +307,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👥 Authors
 
-- Your Name - Initial work
+- Muhammad Farooq - Initial work
 
 ---
 
@@ -322,8 +322,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📞 Contact
 
 For questions or feedback, please contact:
-- Email: your.email@example.com
-- GitHub: @yourusername
+- Email: mfarooqshafee333@gmail.com
+- GitHub: @Muhammad-Farooq13
 
 ---
 
