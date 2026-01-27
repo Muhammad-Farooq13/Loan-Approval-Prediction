@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  loan-prediction-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: loan-prediction-api
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Optional: Add a database service if needed
+  # postgres:
+  #   image: postgres:15
+  #   container_name: loan-db
+  #   environment:
+  #     - POSTGRES_USER=loan_user
+  #     - POSTGRES_PASSWORD=loan_pass
+  #     - POSTGRES_DB=loan_db
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   ports:
+  #     - "5432:5432"
+
+volumes:
+  postgres_data:

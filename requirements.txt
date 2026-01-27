@@ -1,0 +1,71 @@
+# Core Data Science Libraries
+numpy==1.24.3
+pandas==2.0.3
+scikit-learn==1.3.0
+scipy==1.11.1
+
+# Machine Learning & Deep Learning
+xgboost==1.7.6
+lightgbm==4.0.0
+catboost==1.2
+
+# Data Visualization
+matplotlib==3.7.2
+seaborn==0.12.2
+plotly==5.15.0
+
+# Web Framework
+Flask==2.3.2
+Flask-CORS==4.0.0
+gunicorn==21.2.0
+
+# MLOps & Experiment Tracking
+mlflow==2.5.0
+dvc==3.15.0
+wandb==0.15.5
+
+# Data Validation
+great-expectations==0.17.5
+evidently==0.4.2
+
+# Testing
+pytest==7.4.0
+pytest-cov==4.1.0
+pytest-mock==3.11.1
+
+# Code Quality
+black==23.7.0
+flake8==6.0.0
+pylint==2.17.4
+isort==5.12.0
+
+# Utilities
+python-dotenv==1.0.0
+pyyaml==6.0.1
+joblib==1.3.1
+tqdm==4.65.0
+
+# Jupyter
+jupyter==1.0.0
+ipykernel==6.25.0
+notebook==7.0.0
+
+# API & Serialization
+requests==2.31.0
+pydantic==2.1.1
+
+# Model Interpretation
+shap==0.42.1
+lime==0.2.0.1
+
+# Database (optional)
+sqlalchemy==2.0.19
+psycopg2-binary==2.9.6
+
+# Cloud Services (optional)
+boto3==1.28.17
+google-cloud-storage==2.10.0
+azure-storage-blob==12.17.0
+
+# Monitoring
+prometheus-client==0.17.1
